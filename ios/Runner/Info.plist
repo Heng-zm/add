@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- ... other keys like CFBundleName, CFBundleExecutable etc. ... -->
+
+    <!-- CAMERA PERMISSION -->
+    <key>NSCameraUsageDescription</key>
+    <string>This app needs access to the camera to scan QR codes and barcodes.</string>
+
+    <!-- PHOTO LIBRARY PERMISSION (for scanning from gallery) -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>This app needs access to your photo library to allow you to select images containing QR codes or barcodes for scanning.</string>
+
+    <!-- PHOTO LIBRARY ADDITIONS PERMISSION (OPTIONAL - if you want to SAVE generated codes to gallery) -->
+    <!-- <key>NSPhotoLibraryAddUsageDescription</key> -->
+    <!-- <string>This app needs permission to save generated QR codes or barcodes to your photo library.</string> -->
+
+    <!-- CONTACTS PERMISSION (for adding scanned contacts) -->
+    <key>NSContactsUsageDescription</key>
+    <string>This app needs access to your contacts to save scanned contact information (vCards).</string>
+
+    <!-- CALENDAR PERMISSION (for adding scanned events) -->
+    <key>NSCalendarsUsageDescription</key>
+    <string>This app needs access to your calendar to add scanned event information.</string>
+
+    <!-- LOCATION PERMISSION (Usually for Wi-Fi scanning - often just 'When In Use' is needed) -->
+    <!-- iOS needs location permission to access Wi-Fi network names (SSID) -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs location access while running to scan for nearby Wi-Fi network details to create or connect via QR codes.</string>
+    <!-- Optionally add Always and Full Accuracy if needed for specific background tasks, but usually not required for scanning -->
+    <!-- <key>NSLocationAlwaysAndWhenInUseUsageDescription</key> -->
+    <!-- <string>Provide reason for always access</string> -->
+    <!-- <key>NSLocationTemporaryUsageDescriptionDictionary</key> -->
+    <!-- <dict> -->
+    <!--   <key>YourPurposeKey</key> -->
+    <!--   <string>Explain temporary precise location need</string> -->
+    <!-- </dict> -->
+
+
+    <!-- ... other keys like UILaunchStoryboardName etc. ... -->
+<!-- Add these keys inside the main <dict> tag -->
+<key>NSCameraUsageDescription</key>
+<string>Scan QR codes and barcodes using the camera.</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Select images from your library to scan QR codes or barcodes within them.</string>
+<key>NSContactsUsageDescription</key>
+<string>Save scanned contact information directly to your address book.</string>
+<key>NSCalendarsUsageDescription</key>
+<string>Add scanned event details directly to your calendar.</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Access Wi-Fi network details (needed on iOS for scanning/connecting via QR codes).</string>
+</dict>
+</plist>
